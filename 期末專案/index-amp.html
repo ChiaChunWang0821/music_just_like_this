@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html amp lang="zh"><head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Music Just Like This</title>
+
+    <link rel="amphtml" href="index.html">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <link rel="icon" href="picture/favicon.png" sizes="16x16" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    
+
+    <style>
+      @import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700, 800');
+      body{
+        width: 100%;
+        height: 100%;
+        line-height: 2;
+        font-size: 13px;
+        background-image: url(picture/mainBack.jpg) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Open Sans';
+        background-size: cover;
+        background-attachment: fixed;        
+      }
+      .wrapper{
+
+      }
+
+      .font-alt {
+        font-family: Georgia;
+      }
+
+      .side{
+        position: fixed;
+        width: 50%;
+        top: 0;
+        text-align: center;
+        height: 100%;
+        transition: background 0.8s ease 0s;
+        -webkit-transition: background 0.8s ease 0s;
+        -moz-transition: background 0.8s ease 0s;
+        -o-transition: background 0.8s ease 0s;
+        -ms-transition: background 0.8s ease 0s;
+      }
+
+      @media (max-width: 600px) {
+        .side{
+          position: relative;
+          height: 300px;
+          width: 100%;
+        }
+      }
+
+      .side.light{
+        left: 0;
+        color: #000;  
+        background: #fff;
+        background: rgba(255,255,255,0.6);
+      }
+
+      .side.light:hover{
+        background: #fff;
+      }
+
+      .side.light a{
+        color: #000;  
+      }
+
+      .side.light .inner{
+        background: #fff;
+      }
+
+      .side.dark{
+        right: 0;
+        color: #fff;
+        background: #323232;
+        background: rgba(0,0,0,0.8);
+      }
+
+
+      .side.dark:hover{
+        background: #323232;
+      }
+
+      .side.dark:hover .inner{
+        background: #323232;
+      }
+
+      .side.dark a{
+        color: #fff;  
+      }
+
+
+      .box-line {
+        border: 3px solid #000000;
+        color: #000000;
+        letter-spacing: 2px;
+        padding: 10px 30px;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .side.dark  .box-line{
+        border: 3px solid #fff;
+        color: #fff;
+      }
+
+      .text-bold {
+        font-weight: 700;
+      }
+
+      .inner{
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+        background: rgba(255,255,255,0.1);;
+        padding-top: 55px;
+        margin-top: -100px;
+
+        transition: background 0.8s ease 0s;
+        -webkit-transition: background 0.8s ease 0s;
+        -moz-transition: background 0.8s ease 0s;
+        -o-transition: background 0.8s ease 0s;
+        -ms-transition: background 0.8s ease 0s;
+
+      }
+      h4{margin:0;}
+
+      a{
+        text-decoration: none;
+      }
+
+
+    </style>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  </head>
+
+
+  <body>
+    <!--wrapper page-->
+    <div class="wrapper">
+      <div class="light side">
+        <a href="pop-amp.html">
+          <div class="inner">
+            <div class="whoim">
+              <div class="box-line text-uppercase text-bold">
+                MUSIC JUST LIKE THIS
+              </div>
+            </div>
+
+            <h4 class="font-alt">POP</h4>
+          </div>
+        </a>
+      </div>
+      <div class="dark side">
+        <a href="metal.html">
+          <div class="inner">
+            <div class="whoim">
+              <div class="box-line text-uppercase text-bold">
+                MUSIC JUST LIKE THIS
+              </div>
+            </div>
+
+            <h4 class="font-alt">METAL</h4>
+          </div>
+        </a>
+
+      </div>
+    </div><!--End wrapper page-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-3.3.1.min.js" type = "text/javascript"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+</body></html>
