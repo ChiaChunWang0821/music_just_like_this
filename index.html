@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
-<html lang="zh"><head>
+<html amp lang="zh"><head>
     <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Music Just Like This</title>
 
-    <link rel="amphtml" href="index-amp.html">
+    <link rel="amphtml" href="index-ori.html">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -31,6 +32,7 @@
         background-image: url(picture/mainBack.jpg) ;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: 100%;
         font-family: 'Open Sans';
         background-size: cover;
         background-attachment: fixed;        
@@ -57,6 +59,10 @@
       }
 
       @media (max-width: 600px) {
+        body{
+          background-image: url(picture/mainBack2.jpg) ;
+          background-size: cover;
+        }
         .side{
           position: relative;
           height: 300px;
@@ -145,9 +151,11 @@
         text-decoration: none;
       }
 
-      
 
     </style>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
   </head>
 
 
@@ -155,7 +163,7 @@
     <!--wrapper page-->
     <div class="wrapper">
       <div class="light side">
-        <a href="pop.html">
+        <a href="pop-amp.html">
           <div class="inner">
             <div class="whoim">
               <div class="box-line text-uppercase text-bold">
@@ -169,20 +177,20 @@
         </a>
       </div>
       <div class="dark side">
-        <a href="metal.html">
+        <a href="metal-amp.html">
           <div class="inner">
             <div class="whoim">
               <div class="box-line text-uppercase text-bold">
                 MUSIC JUST LIKE THIS
               </div>
             </div>
-
             <h4 class="font-alt">METAL</h4>
             <br>
             <a href="report.pdf" target="_blank">說明文件</a>
           </div>
         </a>
-      </div>      
+
+      </div>
     </div><!--End wrapper page-->
 
 

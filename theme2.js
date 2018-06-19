@@ -164,7 +164,7 @@
     //Typed Animation
     function initTyped() {
       $("#typed").typed({
-        strings: ["Powerful", "Powerful", "Powerful", "Powerful"],
+        strings: ["Powerful", "Rhythmical", "Diversified"],
         // typing speed
         typeSpeed: 300,
         // time before typing starts
